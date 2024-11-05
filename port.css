@@ -1,0 +1,254 @@
+@keyframes roll {
+  0% {
+      transform: rotate(0deg); /* 初期状態の回転 */
+      right: -810px; 
+  }
+  100% {
+      transform: rotate(-720deg); /* 2回転 */
+      right: 0px; /* 右に300px移動 */
+  }
+}
+
+.anim-box.poyoyon2.is-animated {
+  animation: poyoyon2 1s ease-in-out forwards;
+}
+ 
+@keyframes poyoyon2 {
+  0%  {
+    transform: scale(1.0, 1.0) translate(0, 0);
+  }
+  15% {
+    transform: scale(0.98, 0.9) translate(0, 5px);
+  }
+  30% {
+    transform: scale(1.02, 1.0) translate(0, 8px);
+  }
+  50% {transform: scale(0.98, 1.05) translate(0, -8px);
+  }
+  70% {
+    transform: scale(1.0, 0.9) translate(0, 5px);
+  }
+  100% {
+    transform: scale(1.0, 1.0) translate(0, 0);
+  }
+  0%, 100% {
+    opacity: 1;
+  }
+}
+
+@keyframes slideIn1 {
+  0% {
+    transform: translateX(800px);
+    
+  }
+  100% {
+    transform: translateX(0);
+  }
+  40%,100% {
+    opacity: 1;
+  }
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes poyoyon {
+  0% {
+    transform: translateX(140px);
+    opacity: 0;
+  }
+  50% {
+    transform: translateX(0);
+  }
+  65% {
+    transform: translateX(30px);
+  }
+  100% {
+    transform: translateX(0);
+  }
+  20%,100% {
+    opacity: 1;
+  }
+}
+
+
+html {
+  -ms-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+  font-family: "Yusei Magic", sans-serif;
+  --theme-color-1: #f50;
+  --theme-color-2: #fc3;
+  color: #454545;
+}
+
+body {
+  color: var(--main-foreground);
+  line-height: 1.5;
+  word-wrap: break-word;
+  box-sizing: border-box;
+  max-width: 980px;
+  margin: 2em auto;
+  padding: 0px 30px;
+  
+  margin: 0; /* ページの余白を消す */
+  background-image: url('image/背景.png'); /* 画像のパスを指定 */
+  background-size: cover; /* 画像を画面全体に拡大 */
+  background-position: center; /* 画像を中央に配置 */
+  background-repeat: no-repeat; /* 画像の繰り返しを無効化 */
+}
+
+h1 {
+  font-size: 50px;
+  text-align: center; 
+  vertical-align: top;
+
+  background-image: url('image/青.jpg'); /* 画像のURLを指定 */
+  background-size: cover; /* 画像をコンテナに合わせて拡大/縮小 */
+  background-position: center; /* 画像を中央に配置 */
+  color: rgb(49, 47, 47); /* 文字色を白に設定（背景が暗い場合） */
+  padding: 20px;
+}
+
+h2.title1 {
+  width: 300px;
+  font-size: 25px;
+  text-align: center; 
+  vertical-align: top;
+  
+  background-image: url('image/黄色.png'); /* 画像のURLを指定 */
+  background-size: cover; /* 画像をコンテナに合わせて拡大/縮小 */
+  background-position: center; /* 画像を中央に配置 */
+  color: rgb(49, 47, 47); /* 文字色を白に設定（背景が暗い場合） */
+  padding: 20px;
+}
+
+img.title1 {
+  width: 250px; /* 画像のサイズ */
+            height: 250px;
+            border-radius: 50%; /* 画像を丸型にする */
+            animation: roll 1s linear forwards;; /* 転がるアニメーションを適用 */
+            position: relative; /* 相対位置を指定 */
+            z-index: 2;
+}
+
+ul.title1{
+  position: absolute; /* 絶対位置を指定 */
+  top: 290px; /* 上から50pxの位置 */
+  left: 350px; /* 左から50pxの位置 */
+  font-size: 20px; /* 文字サイズ */
+  background-color: lightgoldenrodyellow;
+  z-index: 1;
+}
+
+h2.title2{
+  width: 350px;
+  font-size: 25px;
+  text-align: center; 
+  vertical-align: top;
+
+  background-image: url('image/ピンク.jpg'); /* 画像のURLを指定 */
+  background-size: cover; /* 画像をコンテナに合わせて拡大/縮小 */
+  background-position: center; /* 画像を中央に配置 */
+  color: rgb(49, 47, 47); /* 文字色を白に設定（背景が暗い場合） */
+  padding: 20px;
+  
+}
+
+p.title1{
+  font-size: 20px; /* 文字サイズ */
+  background-color: pink;
+}
+
+h2.title3{
+  width: 350px;
+  font-size: 25px;
+  text-align: center; 
+  vertical-align: top;
+  margin: 0 auto;
+
+  background-image: url('image/黄緑.png'); /* 画像のURLを指定 */
+  background-size: cover; /* 画像をコンテナに合わせて拡大/縮小 */
+  background-position: center; /* 画像を中央に配置 */
+  color: rgb(49, 47, 47); /* 文字色を白に設定（背景が暗い場合） */
+  padding: 20px;
+}
+
+.description {
+  display: none;
+  margin-top: 10px;
+  color: #333;
+}
+
+/* リスト項目にカーソルを合わせたときのスタイル */
+.clickable {
+  cursor: pointer;
+  color: #007BFF;
+  animation: slideIn1 1s cubic-bezier(0.25, 1, 0.5, 1) forwards;
+}
+
+img.title2 {
+  opacity: 1; /* 初期状態は透明 */
+}
+
+img.title2.animate {
+  animation: slideIn1 1s cubic-bezier(0.25, 1, 0.5, 1) forwards; /* アニメーションの適用 */
+  opacity: 1; /* アニメーション後は不透明に */
+}
+
+img.title3 {
+  opacity: 1; /* 初期状態は透明 */
+}
+
+img.title3.animate {
+  animation: slideIn1 2s cubic-bezier(0.25, 1, 0.5, 1) forwards; /* アニメーションの適用 */
+}
+
+img.title5 {
+  opacity: 1; /* 初期状態は透明 */
+}
+
+img.title5.animate {
+  animation: fadeIn 1s cubic-bezier(0.33, 1, 0.68, 1) forwards; /* アニメーションの適用 */
+}
+
+img.title4 {
+  opacity: 1; /* 初期状態は透明 */
+}
+
+img.title4.animate {
+  animation: poyoyon 0.5s cubic-bezier(0.12, 0, 0.39, 0) 1 forwards;
+}
+
+img.title6 {
+  opacity: 1; /* 初期状態は透明 */
+}
+
+img.title6.animate {
+  animation: poyoyon2 0.5s cubic-bezier(0.12, 0, 0.39, 0) 1 forwards;
+}
+
+h2.title4{
+  width: 350px;
+  font-size: 25px;
+  text-align: center; 
+  vertical-align: top;
+  margin: 0 auto;
+
+  background-image: url('image/クリオネ.png'); /* 画像のURLを指定 */
+  background-size: cover; /* 画像をコンテナに合わせて拡大/縮小 */
+  background-position: center; /* 画像を中央に配置 */
+  color: rgb(49, 47, 47); /* 文字色を白に設定（背景が暗い場合） */
+  padding: 20px;
+}
+
+ul.title2 li.title3{
+  position: absolute; /* 絶対位置を指定 */
+  top: 900px; /* 上から50pxの位置 */
+  left: 650px; /* 左から50pxの位置 */
+}
