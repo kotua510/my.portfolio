@@ -252,3 +252,8 @@ ul.title2 li.title3{
   top: 900px; /* 上から50pxの位置 */
   left: 650px; /* 左から50pxの位置 */
 }
+
+ul.title3 li.title4{
+  font-size: 20px; /* 文字サイズ */
+  background-color: lightblue;
+}
