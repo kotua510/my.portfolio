@@ -256,4 +256,5 @@ ul.title2 li.title3{
 ul.title3 li.title4{
   font-size: 20px; /* 文字サイズ */
   background-color: lightblue;
+  display: inline;
 }
