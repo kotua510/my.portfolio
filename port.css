@@ -96,7 +96,7 @@ body {
   margin: 2em auto;
   padding: 0px 30px;
   
-  margin: 0; /* ページの余白を消す */
+  /*margin: 0;*/ /* ページの余白を消す */
   background-image: url('image/背景.png'); /* 画像のパスを指定 */
   background-size: cover; /* 画像を画面全体に拡大 */
   background-position: center; /* 画像を中央に配置 */
@@ -123,7 +123,7 @@ h2.title1 {
   
   background-image: url('image/黄色.png'); /* 画像のURLを指定 */
   background-size: cover; /* 画像をコンテナに合わせて拡大/縮小 */
-  background-position: center; /* 画像を中央に配置 */
+  background-position: light; /* 画像を中央に配置 */
   color: rgb(49, 47, 47); /* 文字色を白に設定（背景が暗い場合） */
   padding: 20px;
 }
@@ -140,7 +140,7 @@ img.title1 {
 ul.title1{
   position: absolute; /* 絶対位置を指定 */
   top: 290px; /* 上から50pxの位置 */
-  left: 350px; /* 左から50pxの位置 */
+  left: 440px; /* 左から50pxの位置 */
   font-size: 20px; /* 文字サイズ */
   background-color: lightgoldenrodyellow;
   z-index: 1;
@@ -181,8 +181,23 @@ h2.title3{
 
 .description {
   display: none;
-  margin-top: 10px;
+  margin-top: 30px;
   color: #333;
+}
+
+.p1 {
+  display: block;
+  margin-top: 20px;
+  font-size: 18px;
+  color: #333;
+}
+
+.pp1{
+  display: block;
+  font-size: 20px;
+  color: yellow;
+  -webkit-text-stroke: 1px black; /* 黒色の縁取り */
+
 }
 
 /* リスト項目にカーソルを合わせたときのスタイル */
@@ -253,28 +268,29 @@ ul.title2 li.title3{
   left: 650px; /* 左から50pxの位置 */
 }
 
-ul.title3 li.title4{
-  font-size: 25px; /* 文字サイズ */
+h3.title4{
+  font-size: 23px; /* 文字サイズ */
   background-color: lightblue;
   display: inline;
 }
 
-ul.title3 p.title4{
-  font-size: 20px; /* 文字サイズ */
-}
 
-ul.title3 p.title5{
-  font-size: 20px; /* 文字サイズ */
-}
+  .works-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between; /* 2列配置 */
+  }
+  
+  .work-container {
+    width: 48%; /* 2列にするための幅調整 */
+    margin-bottom: 20px; /* 下に余白を追加 */
+    box-sizing: border-box;
+  }
 
-ul.title3 p.title6{
-  font-size: 20px; /* 文字サイズ */
-}
+  /* スマホ対応で1列にする */
+  @media (max-width: 768px) {
+    .work-container {
+      width: 100%; /* 1列表示 */
+    }
+  }
 
-ul.title3 p.title7{
-  font-size: 20px;
-}
-
-ul.title3 p.title8{
-  font-size: 17px;
-}
