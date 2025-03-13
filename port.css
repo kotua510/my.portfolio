@@ -126,7 +126,7 @@ h2.title1 {
   background-size: cover; /* 画像をコンテナに合わせて拡大/縮小 */
   background-position: light; /* 画像を中央に配置 */
   color: rgb(49, 47, 47); /* 文字色を白に設定（背景が暗い場合） */
-  padding: 20px;
+  padding: 30px;
 }
 
 img.title1 {
@@ -140,8 +140,8 @@ img.title1 {
 
 ul.title1{
   position: absolute; /* 絶対位置を指定 */
-  top: 290px; /* 上から50pxの位置 */
-  left: 440px; /* 左から50pxの位置 */
+  top: 280px; /* 上から50pxの位置 */
+  left: 550px; /* 左から50pxの位置 */
   font-size: 20px; /* 文字サイズ */
   background-color: lightgoldenrodyellow;
   z-index: 1;
@@ -307,12 +307,12 @@ h2.title4{
 
 ul.title2 li.title3{
   position: absolute; /* 絶対位置を指定 */
-  top: 900px; /* 上から50pxの位置 */
-  left: 650px; /* 左から50pxの位置 */
+  top: 970px; /* 上から50pxの位置 */
+  left: 750px; /* 左から50pxの位置 */
 }
 
 h3.title4{
-  font-size: 23px; /* 文字サイズ */
+  font-size: 22px; /* 文字サイズ */
   background-color: lightblue;
   display: inline;
 }
@@ -337,3 +337,55 @@ h3.title4{
     }
   }
 
+  /* 固定メニューのスタイル */
+.fixed-menu {
+  position: fixed; /* 固定表示 */
+  top: 20px;
+  left: 20px;
+  width: 160px; /* メニューの幅 */
+  background-color: black;
+  padding: 10px;
+  border-radius: 5px;
+  z-index: 1000; /* 他の要素より前面に表示 */
+}
+
+.menu {
+  display: block; /* メニュー項目を縦に並べる */
+  text-decoration: none;
+  color: white;
+  padding: 10px 15px;
+  margin: 5px 0; /* 各項目の間隔 */
+  border-radius: 5px;
+  font-size: 15px;
+}
+
+.menu:hover {
+  background: gray;
+}
+
+.not_menu{
+  display: block; /* メニュー項目を縦に並べる */
+  text-decoration: none;
+  color: white;
+  padding: 10px 15px;
+  margin: 5px 0; /* 各項目の間隔 */
+  border-radius: 5px;
+  font-size: 20px;
+}
+
+/* セクションのスタイル（メニューリンク先） */
+.section {
+  margin-left: 70px; /* メニューの横幅分スペースを空ける */
+  padding: 20px;
+}
+
+h1, h2 {
+  margin: 0;
+}
+
+ul {
+  list-style-type: none;
+  padding-left: 0;
+}
+
+  

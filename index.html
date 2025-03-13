@@ -18,9 +18,18 @@
   </head>
 
   <body> <!-- ここから本文開始 -->
+      <!-- 固定メニュー -->
+      <div class="fixed-menu">
+        <a class="not_menu">select menu</a>
+        <a href="#introduction" class="menu">自己紹介</a>
+        <a href="#dream" class="menu">将来やりたいこと</a>
+        <a href="#language" class="menu">習得言語や環境など</a>
+        <a href="#product" class="menu">成果物</a>
+      </div>
+      <div id="introduction" class="section">
         <h1>これが私のportfolio</h1>
-    <h2 class="title1">まずは自己紹介から</h2>
-    <img src="image/アイコン.png" class="title1" alt="アイコン（即興）" width="20%" />
+        <h2 class="title1">まずは自己紹介から</h2>    
+        <img src="image/アイコン.png" class="title1" alt="アイコン（即興）" width="20%" />
     <ul class="title1">
         <li>名前：池神虎太朗</li>
         <li>年齢:16歳</li>
@@ -29,15 +38,17 @@
         <li>最近のうれしかったこと:ターン制バトルの戦闘を再現できるようになったこと</li>
         <li>好きなもの:ゲーム、ゲーム作成etc...</li>
       </ul>
-
-    <h2 class="title2">将来やりたいことはこれです！</h2>
+      </div>
+      <div id="dream" class="section">
+      <h2 class="title2">将来やりたいことはこれです！</h2>
     <p class="title1">
         まずは将来の夢から、ズバリ <strong>ゲームクリエイターです！</strong>
         小学生ぐらいからぼんやりとゲームを作りたいなぁ</br>
         と思い続けて、気づけば高専に入学していましたね。</br>
         自分の目標を達成するために現在勉強中です！</br>
-        
     </p>
+  </div>
+  <div id="language" class="section">
     <h2 class="title3">習得済みプログラミング言語や経験のある開発環境など</h2>
     <ul class="title2">
       <li>
@@ -97,46 +108,54 @@
         </p>
       </li>
     </ul>
-    
-  
+  </div>
+  <div id="product" class="section">
     <h2 class="title4">今までの成果物</h2>
 <ul class="works-wrapper">
   <li class="work-container">
     <h3 class="title4">ドラクエっぽいターン制RPGバトル</h3>
     <img src="image/dq.gif" alt="実行時" width="430">
+    <details>
     <p class="title4">
-      ドラクエを参考にしたターン制RPGのバトルを作りました。</br>
+      <summary>ドラクエを参考にしたターン制RPGのバトルを作りました。</br>
+      (文章をクリックすると続きが表示されます)</br></summary>
           授業でのpythonを使った自由課題の時に制作しました。</br>
           初めての成果物ですが自分の納得のいくまで作りこみました。</br>
           まだモジュールなどを使っていないので文字だけです。＞＜</br>
           以下はgithubのリポジトリのリンクです。</br>
       <a href="https://github.com/kotua510/DQlike-buttlegame">https://github.com/kotua510/DQlike-buttlegame</a>
+    </details>
     </p>
   </li>
 
   <li class="work-container">
     <h3 class="title4">Discord.botとそれを共有できるWebサイト</h3>
     <img src="image/bot.gif" alt="実行時" width="430">
+    <details>
     <p class="title6">
-      二年生の時の高専祭(文化祭)の制作物です。</br>
+      <summary>二年生の時の高専祭(文化祭)の制作物です。</br>
           discord.botというdiscordの拡張機能を用いて</br>
           discordの機能の拡張と、そのbotを投稿したり</br>
           ダウンロードすることができるwebサイトを製作しました。</br>
+          (文章をクリックすると続きが表示されます)</br></summary>
           いつでも使用できるようにflaskサーバーなどを利用しました。</br>
           私はbotの作成、高専祭の際体験してもらう</br>
           discordサーバーを作成しました。</br>
           以下はgithubのリポジトリのリンクです。</br>
           (担当したdiscord.botのみ)</br>
       <a href="https://github.com/kotua510/discord.bot">https://github.com/kotua510/discord.bot</a>
+    </details>
     </p>
   </li>
 
   <li class="work-container">
     <h3 class="title4">マインスイーパー＆バトル</h3>
     <img src="image/mb.gif" alt="実行時" width="430">
+    <details>
     <p class="title7">
-      マインスイーパーとターン制バトルを組み合わせた</br>
+      <summary>マインスイーパーとターン制バトルを組み合わせた</br>
           ゲームを作ってみました。</br>
+          (文章をクリックすると続きが表示されます)</br></summary>
           制作期間は2024年 12月から 2025年 1月です。</br>
           今までは既存のターン制バトルを真似たものを作ってきましたが</br>
           今回はオリジナルっぽいものを作ってみたかったので</br>
@@ -151,6 +170,7 @@
           それを読んでからプレイしてください。</br>
           以下はgithubのリポジトリのURLです。</br>
       <a href="https://github.com/kotua510/minesweeper-battle">https://github.com/kotua510/minesweeper-battle</a>
+    </details>
     </p>
   </li>
 
@@ -159,7 +179,9 @@
     <img src="pm1.png" alt="実行時" width="450" class="pictures1">
     <img src="pm2.png" alt="実行時" width="450" class="pictures1">
     <img src="pm3.png" alt="実行時" width="450" class="pictures1">
+    <details>
     <p class="title8"> 
+      <summary>
     </br>
   </br>
 </br>
@@ -171,8 +193,9 @@
 </br>
 </br>
 </br>
-      学校の課題や自主制作などで使える</br>
+学校の課題や自主制作などで使える</br>
       プロジェクト管理アプリを作りました。</br>
+      (文章をクリックすると続きが表示されます)</br></summary>
       制作期間は2025年 2月で、12時間ほどかけて制作しました。</br>
       制作した理由はいままで自分が何かを制作するときに</br>
       使っていたメモ帳アプリで不便だと感じていた部分を</br>
@@ -191,9 +214,11 @@
       使い方はリポジトリにあるので使う際はぜひご覧ください。</br>
       以下はgithubのリポジトリのURLです。</br>
       <a href="https://github.com/kotua510/project_management">https://github.com/kotua510/project_management</a>
+</details>
     </p>
   </li>
 </ul>
+</div>
 
 
       <script>
