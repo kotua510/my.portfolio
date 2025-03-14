@@ -250,28 +250,16 @@ img.title6.animate {
 }
 
 .work-container {
-  position: relative;
-  overflow: hidden;
+  position: relative;/*画像の配置位置の基準を決定*/
+  overflow: hidden;/*画像が親要素の範囲を越えないように設定*/
 }
 
 
 .pictures1{
-  position: absolute;
-  opacity: 0;
-  animation: slideShow 9s infinite;
+  position: absolute;/*画像の配置を可能にする*/
+  opacity: 0;/*最初は透明化*/
+  animation: slideShow 9s infinite;/*infiniteのアニメ―ジョンを9秒でループ*/
 }
-
-/*.pictures1:nth-child(1) {
-  animation-delay: 0s;
-}
-
-.pictures1:nth-child(2) {
-  animation-delay: 3s;
-}
-
-.pictures1:nth-child(3) {
-  animation-delay: 6s;
-}*/
 
 .work-container img:nth-of-type(1) {
   animation-delay: 0s;
@@ -319,7 +307,7 @@ h3.title4{
 
 
   .works-wrapper {
-    display: flex;
+    display: flex;/*要素を横並びにする*/
     flex-wrap: wrap;
     justify-content: space-between; /* 2列配置 */
   }
@@ -339,20 +327,20 @@ h3.title4{
 
   /* 固定メニューのスタイル */
 .fixed-menu {
-  position: fixed; /* 固定表示 */
-  top: 20px;
-  left: 20px;
+  position: fixed; /* スクロールに対して固定表示 */
+  top: 20px;/*y軸座標指定*/
+  left: 20px;/*x軸座標指定*/
   width: 160px; /* メニューの幅 */
-  background-color: black;
+  background-color: black;/*メニューの背景色指定*/
   padding: 10px;
-  border-radius: 5px;
+  border-radius: 5px;/*角取り*/
   z-index: 1000; /* 他の要素より前面に表示 */
 }
 
 .menu {
-  display: block; /* メニュー項目を縦に並べる */
+  display: block; /* メニュー項目をブロック要素化し、縦に並べる */
   text-decoration: none;
-  color: white;
+  color: white;/*文字の色を指定*/
   padding: 10px 15px;
   margin: 5px 0; /* 各項目の間隔 */
   border-radius: 5px;
@@ -361,7 +349,7 @@ h3.title4{
 
 .menu:hover {
   background: gray;
-}
+}/*ポインターが乗った時の設定*/
 
 .not_menu{
   display: block; /* メニュー項目を縦に並べる */
