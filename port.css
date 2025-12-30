@@ -473,6 +473,10 @@ h3.title4{
   display: inline;
 }
 
+.linklist{
+  font-size: 20px; /* 文字サイズ */
+}
+
 
   .works-wrapper {
     display: flex;/*要素を横並びにする*/
