@@ -388,20 +388,72 @@ img.title9.animate {
   overflow: hidden;/*画像が親要素の範囲を越えないように設定*/
 }
 
+.slide1 {
+  position: relative;
+}
 
-.pictures1{
+
+
+
+.slide1 .pictures1{
   position: absolute;/*画像の配置を可能にする*/
   opacity: 0;/*最初は透明化*/
   animation: slideShow 9s infinite;/*infiniteのアニメ―ジョンを9秒でループ*/
 }
 
-.work-container img:nth-of-type(1) {
+
+.slide2 {
+  position: relative;
+}
+
+.slide2 .pictures2 {
+  position: absolute;
+  opacity: 0;
+  animation: slideShow2 33s infinite;
+  width: 30vw;
+  height: 43vh;
+  object-fit: cover;
+}
+
+.slide3 {
+  position: relative;
+}
+
+.slide3 .pictures3 {
+  position: absolute;
+  opacity: 0;
+  animation: slideShow3 18s infinite;
+  width: 45vw;
+  height: 42vh;
+  object-fit: cover;
+}
+
+.slide3 img:nth-of-type(1)  { animation-delay: 0s; }
+.slide3 img:nth-of-type(2)  { animation-delay: 3s; }
+.slide3 img:nth-of-type(3)  { animation-delay: 6s; }
+.slide3 img:nth-of-type(4)  { animation-delay: 9s; }
+.slide3 img:nth-of-type(5)  { animation-delay: 12s; }
+.slide3 img:nth-of-type(6)  { animation-delay: 15s; }
+
+.slide2 img:nth-of-type(1)  { animation-delay: 0s; }
+.slide2 img:nth-of-type(2)  { animation-delay: 3s; }
+.slide2 img:nth-of-type(3)  { animation-delay: 6s; }
+.slide2 img:nth-of-type(4)  { animation-delay: 9s; }
+.slide2 img:nth-of-type(5)  { animation-delay: 12s; }
+.slide2 img:nth-of-type(6)  { animation-delay: 15s; }
+.slide2 img:nth-of-type(7)  { animation-delay: 18s; }
+.slide2 img:nth-of-type(8)  { animation-delay: 21s; }
+.slide2 img:nth-of-type(9)  { animation-delay: 24s; }
+.slide2 img:nth-of-type(10) { animation-delay: 27s; }
+.slide2 img:nth-of-type(11) { animation-delay: 30s; }
+
+.slide1 img:nth-of-type(1) {
   animation-delay: 0s;
 }
-.work-container img:nth-of-type(2) {
+.slide1 img:nth-of-type(2) {
   animation-delay: 3s;
 }
-.work-container img:nth-of-type(3) {
+.slide1 img:nth-of-type(3) {
   animation-delay: 6s;
 }
 
@@ -411,6 +463,22 @@ img.title9.animate {
   30% { opacity: 1; }
   40% { opacity: 0; }
   100% { opacity: 0; }
+}
+
+@keyframes slideShow2 {
+  0%   { opacity: 0; }
+  5%   { opacity: 1; }
+  14%  { opacity: 1; }
+  18%  { opacity: 0; }
+  100% { opacity: 0; }
+}
+
+@keyframes slideShow3 {
+  0%    { opacity: 0; }
+  6%    { opacity: 1; }
+  22%   { opacity: 1; }
+  28%   { opacity: 0; }
+  100%  { opacity: 0; }
 }
 
 h2.title4{
@@ -548,4 +616,8 @@ ul {
   padding-left: 0;
 }
 
-  
+.bg-video1 {
+  width: 31vw;
+  height: auto;
+}
+
