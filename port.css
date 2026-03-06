@@ -314,6 +314,10 @@ h2.title3{
   animation: slideIn1 1s cubic-bezier(0.25, 1, 0.5, 1) forwards;
 }
 
+.clickablenot {
+  color: #007BFF;
+}
+
 img.title2 {
   opacity: 1; /* 初期状態は透明 */
 }
