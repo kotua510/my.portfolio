@@ -956,7 +956,7 @@ img.title6:hover{
   opacity: 0;
   animation: slideShow3 18s infinite;
   width: 100%;
-  height: 42vh;
+  height: 40vh;
   object-fit: cover;
 }
 
@@ -1147,6 +1147,33 @@ h3.title4{
   }
 }
 
+.mail {
+  font-size: 1.6em;   /* 好きな大きさに */
+}
+
+.linklist_my {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 15px;
+  list-style: none;
+  padding: 0;
+}
+
+@media (max-width: 768px) {
+  .linklist_my{
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 480px) {
+  .linklist_my{
+    font-size: 14px;
+  }
+}
+
+
+
 
   .works-wrapper {
     display: flex;/*要素を横並びにする*/
@@ -1315,6 +1342,26 @@ ul {
   transform:scale(1.05);
 }
 
+.link-btn_my{
+
+  display:block;
+  padding:8px 14px;
+  position: center;
+
+  border-radius:6px;
+  text-decoration:none;
+  color:white;
+  font-size:25px;
+
+  transition:0.2s;   
+  width: 600px;      
+  text-align: center;
+}
+
+.link-btn_my:hover{
+  transform:scale(1.05);
+}
+
 .github{
   background:#24292f;
 }
@@ -1322,6 +1369,8 @@ ul {
 .demo{
   background:#007acc;
 }
+
+
 
 .youtube{
   background:#ff0000;
